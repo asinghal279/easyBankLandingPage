@@ -13,12 +13,13 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
 .padding-10 {
   padding: 10% 0;
 }
-.margin-5{
-    margin: 5% 0;
+.margin-5 {
+  margin: 5% 0;
 }
-.margin-10{
-    margin: 10% 0;
+.margin-10 {
+  margin: 10% 0;
 }
+
 @media only screen and (max-width: 600px) {
   header {
     display: flex;
@@ -42,7 +43,6 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
       font-weight: 300;
       color: $heading_color;
       font-size: 2.5em;
-
       margin-bottom: 5%;
     }
     p {
@@ -60,24 +60,63 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     }
   }
   .features {
-      background-color: #f4f5f7;
+    background-color: #f4f5f7;
     h2 {
-        color: $heading_color;
-        font-weight: 400;
-        font-size: 2.4em;
-        margin-bottom: 5%;
+      color: $heading_color;
+      font-weight: 400;
+      font-size: 2.4em;
+      margin-bottom: 5%;
     }
-    .feature-card{
-        margin-left: 3%;
-        margin-right: 3%;
-        h3{
-            font-weight: 400;
-            color: $heading_color;
-            font-size: 1.5em;
+    .feature-card {
+      margin-left: 3%;
+      margin-right: 3%;
+      h3 {
+        font-weight: 400;
+        color: $heading_color;
+        font-size: 1.5em;
+      }
+      img {
+        margin-top: 5%;
+      }
+    }
+  }
+  .article-section {
+    background-color: #f4f5f7;
+    padding: 7%;
+    h2 {
+      color: $heading_color;
+      font-weight: 300;
+      font-size: 2em;
+    }
+
+    .article-card {
+      border-radius: 5px;
+      background-color: white;
+      padding: 0 0 3% 0;
+      margin-top: 8%;
+      img {
+        max-width: 100%;
+        border-radius: 5px 5px 0 0;
+      }
+      .article-content {
+          padding: 0 2%;
+        .small-text {
+          font-size: 0.6em;
         }
-        img{
-            margin-top: 5%;
+        
+        h3 {
+          font-size: 1em;
+          color: $heading_color;
+          font-weight: 200;
+          text-align: left;
+          margin: 4% 0;
         }
+        p {
+          text-align: left;
+          font-size: 0.9em;
+          margin: 4% 0;
+        }
+      }
     }
   }
 }
