@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;800;900&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Easybank landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,16 +25,18 @@
   <body>
     <header>
       <img src="./images/logo.svg" alt="" />
-      <img src="./images/icon-hamburger.svg" alt="" />
+      <img src="./images/icon-hamburger.svg" id="bars" alt="" />
+      <img src="./images/icon-close.svg" id="close" alt="" />
+
     </header>
     <section class="mobile-navigation">
       <div class="navigation-box">
         <ul>
-          <li class="navigation-link">Home</li>
-          <li class="navigation-link">About</li>
-          <li class="navigation-link">Contact</li>
-          <li class="navigation-link">Blog</li>
-          <li class="navigation-link">Careers</li>
+          <a href="#"></a><li class="navigation-link">Home</li></a>
+          <a href="#"></a><li class="navigation-link">About</li></a>
+          <a href="#"></a><li class="navigation-link">Contact</li></a>
+          <a href="#"></a><li class="navigation-link">Blog</li></a>
+          <a href="#"></a><li class="navigation-link">Careers</li></a>
         </ul>
       </div>
     </section>
@@ -157,17 +159,29 @@
         </span>
       </div>
       <ul>
-        <li class="list-item">About Us</li>
-        <li class="list-item">Contact</li>
-        <li class="list-item">Blog</li>
-        <li class="list-item">Careers</li>
-        <li class="list-item">Support</li>
-        <li class="list-item">Privacy Policy</li>
+        <a href="#"></a><li class="list-item">About Us</li></a>
+        <a href="#"></a><li class="list-item">Contact</li></a>
+        <a href="#"></a><li class="list-item">Blog</li></a>
+        <a href="#"></a><li class="list-item">Careers</li></a>
+        <a href="#"></a><li class="list-item">Support</li></a>
+        <a href="#"></a><li class="list-item">Privacy Policy</li></a>
       </ul>
       <div class="footer-request-button align-center padding-10">
         <button class="request-button">Request Invite</button>
       </div>
       <p>&copy;Easybank. All Rights Reserved</p>
     </footer>
+    <script>
+      $("#bars").click(() => {
+        $("#bars").hide();
+        $("#close").show(200);
+        $(".mobile-navigation").show(200);
+      });
+      $("#close").click(() => {
+        $(".mobile-navigation").hide(200);
+        $("#close").hide(100);
+        $("#bars").show(200);
+      })
+    </script>
   </body>
 </html>

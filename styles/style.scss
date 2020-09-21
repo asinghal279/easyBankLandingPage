@@ -31,6 +31,10 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
   font-weight: 700;
   font-size: 0.9em;
 }
+#close{
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     display: flex;
@@ -152,6 +156,7 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
   }
   .mobile-navigation {
     position: absolute;
+    display: none;
     height: 100%;
     width: 100%;
     background: linear-gradient(
@@ -171,6 +176,7 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
       .navigation-link {
         color: #2c2e3a;
         padding: 4% 0;
+        font-size: 1.2em;
       }
     }
   }
