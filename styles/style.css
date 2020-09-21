@@ -74,7 +74,8 @@
     margin-bottom: 5%;
   }
   .features .feature-card {
-    padding: 0 2%;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .features .feature-card h3 {
     font-weight: 400;
