@@ -6,7 +6,9 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
   font-family: "Public Sans", sans-serif;
   color: $text_color;
   text-align: center;
+  list-style: none;
 }
+
 .align-center {
   text-align: center;
 }
@@ -19,7 +21,16 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
 .margin-10 {
   margin: 10% 0;
 }
-
+.request-button {
+    width: 40%;
+    background: $gradient;
+    border-radius: 33px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9em;
+  }
 @media only screen and (max-width: 600px) {
   header {
     display: flex;
@@ -47,16 +58,6 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     }
     p {
       font-size: 15px;
-    }
-    .request-button {
-      width: 40%;
-      background: $gradient;
-      border-radius: 33px;
-      height: 40px;
-      border: none;
-      color: white;
-      font-weight: 700;
-      font-size: 0.9em;
     }
   }
   .features {
@@ -99,11 +100,11 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
         border-radius: 5px 5px 0 0;
       }
       .article-content {
-          padding: 0 2%;
+        padding: 0 2%;
         .small-text {
           font-size: 0.6em;
         }
-        
+
         h3 {
           font-size: 1em;
           color: $heading_color;
@@ -117,6 +118,31 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
           margin: 4% 0;
         }
       }
+    }
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2d314e;
+    padding: 6% 0;
+    ul{
+        padding: 0;
+    }
+    .list-item{
+        padding: 2% 0;
+        color: white;
+    }
+    .footer-icons {
+        display: flex;
+        justify-content:center;
+        flex-direction: row;
+        padding: 5% 0;
+        .icon {
+            display: inline;
+            margin: 0 2%;
+        }
+        
     }
   }
 }
