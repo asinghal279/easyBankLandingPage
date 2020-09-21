@@ -168,5 +168,26 @@
     display: inline;
     margin: 0 8%;
   }
+  .mobile-navigation {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 69, 110, 0.5)), to(rgba(220, 221, 255, 0.9)));
+    background: linear-gradient(to bottom, rgba(68, 69, 110, 0.5), rgba(220, 221, 255, 0.9));
+  }
+  .mobile-navigation .navigation-box {
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 5px;
+    width: 80%;
+    padding: 5% 0;
+  }
+  .mobile-navigation .navigation-box ul {
+    padding: 0;
+  }
+  .mobile-navigation .navigation-box .navigation-link {
+    color: #2c2e3a;
+    padding: 4% 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
