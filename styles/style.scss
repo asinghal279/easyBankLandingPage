@@ -1,0 +1,82 @@
+$heading_color: #303247;
+$text_color: #a0a1a5;
+$gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
+* {
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  color: $text_color;
+  text-align: center;
+}
+.align-center {
+  text-align: center;
+}
+.padding-10 {
+  padding: 10% 0;
+}
+.margin-5{
+    margin: 5% 0;
+}
+.margin-10{
+    margin: 10% 0;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    img {
+      max-width: 100%;
+    }
+    .logo {
+      width: 40%;
+    }
+  }
+  .banner {
+    background-image: url("../images/image-mockups.png"),
+      url("../images/bg-intro-mobile.svg");
+    background-position: 0 -128px, 0 0;
+    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
+    padding-top: 100%;
+    h1 {
+      font-weight: 300;
+      color: $heading_color;
+      font-size: 2.5em;
+
+      margin-bottom: 5%;
+    }
+    p {
+      font-size: 15px;
+    }
+    .request-button {
+      width: 40%;
+      background: $gradient;
+      border-radius: 33px;
+      height: 40px;
+      border: none;
+      color: white;
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+  }
+  .features {
+      background-color: #f4f5f7;
+    h2 {
+        color: $heading_color;
+        font-weight: 400;
+        font-size: 2.4em;
+        margin-bottom: 5%;
+    }
+    .feature-card{
+        padding: 0 2%;
+        h3{
+            font-weight: 400;
+            color: $heading_color;
+            font-size: 1.5em;
+        }
+        img{
+            margin-top: 5%;
+        }
+    }
+  }
+}
