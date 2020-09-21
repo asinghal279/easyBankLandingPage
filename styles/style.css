@@ -345,10 +345,22 @@
     width: 80%;
     margin: 0 auto;
   }
-  .article-section .container .h2 {
+  .article-section .container h2 {
     color: #303247;
     font-weight: 300;
     font-size: 2em;
+  }
+  .article-section .container .article-card-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */

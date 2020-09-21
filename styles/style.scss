@@ -300,11 +300,16 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     .container {
       width: 80%;
       margin: 0 auto;
-      .h2{
-        color: $heading_color;
-        font-weight: 300;
-        font-size: 2em;
-      }
+    h2{
+      color: $heading_color;
+      font-weight: 300;
+      font-size: 2em;
+    }
+    .article-card-wrap{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
     }
   }
+}
 }
