@@ -38,8 +38,35 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  header {
+.mobile-navigation {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 69, 110, 0.5)), to(rgba(220, 221, 255, 0.9)));
+  background: linear-gradient(to bottom, rgba(68, 69, 110, 0.5), rgba(220, 221, 255, 0.9));
+}
+
+.mobile-navigation .navigation-box {
+  margin: 5% auto;
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  padding: 5% 0;
+}
+
+.mobile-navigation .navigation-box ul {
+  padding: 0;
+}
+
+.mobile-navigation .navigation-box .navigation-link {
+  color: #2c2e3a;
+  padding: 4% 0;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobile-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -48,10 +75,10 @@
             justify-content: space-between;
     padding: 5%;
   }
-  header img {
+  .mobile-header img {
     max-width: 100%;
   }
-  header .logo {
+  .mobile-header .logo {
     width: 40%;
   }
   .banner {
@@ -172,28 +199,38 @@
     display: inline;
     margin: 0 8%;
   }
-  .mobile-navigation {
-    position: absolute;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mobile-header {
     display: none;
-    height: 100%;
-    width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 69, 110, 0.5)), to(rgba(220, 221, 255, 0.9)));
-    background: linear-gradient(to bottom, rgba(68, 69, 110, 0.5), rgba(220, 221, 255, 0.9));
   }
-  .mobile-navigation .navigation-box {
-    margin: 5% auto;
-    background-color: white;
-    border-radius: 5px;
-    width: 80%;
-    padding: 5% 0;
+  .desktop-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1%;
   }
-  .mobile-navigation .navigation-box ul {
-    padding: 0;
+  .desktop-header .request-button {
+    width: 16%;
   }
-  .mobile-navigation .navigation-box .navigation-link {
-    color: #2c2e3a;
-    padding: 4% 0;
-    font-size: 1.2em;
+  .desktop-header .nav-items {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .desktop-header .nav-items .nav-link {
+    padding: 5% 3%;
   }
 }
 /*# sourceMappingURL=style.css.map */
