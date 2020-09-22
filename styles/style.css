@@ -341,6 +341,16 @@
   .features .container .feature-card {
     margin: 10% 3% 0;
   }
+  .features .container .feature-card h3 {
+    font-weight: 400;
+    color: #303247;
+    font-size: 1.2em;
+    margin: 10% 0;
+  }
+  .article-section {
+    background-color: #fafafa;
+    padding: 5% 0;
+  }
   .article-section .container {
     width: 80%;
     margin: 0 auto;
@@ -349,6 +359,7 @@
     color: #303247;
     font-weight: 300;
     font-size: 2em;
+    margin-bottom: 5%;
   }
   .article-section .container .article-card-wrap {
     display: -webkit-box;
@@ -361,6 +372,34 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .article-section .container .article-card-wrap .article-card {
+    width: 22%;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .article-section .container .article-card-wrap .article-card img {
+    width: 100%;
+    max-height: 158px;
+    border-radius: 5px 5px 0 0;
+  }
+  .article-section .container .article-card-wrap .article-card .article-content {
+    padding: 2% 8% 8%;
+  }
+  .article-section .container .article-card-wrap .article-card .article-content .small-text {
+    font-size: 0.6em;
+  }
+  .article-section .container .article-card-wrap .article-card .article-content h3 {
+    font-size: 1em;
+    color: #303247;
+    font-weight: 200;
+    text-align: left;
+    margin: 4% 0;
+  }
+  .article-section .container .article-card-wrap .article-card .article-content p {
+    text-align: left;
+    font-size: 0.8em;
+    margin: 4% 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

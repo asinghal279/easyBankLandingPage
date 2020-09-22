@@ -293,23 +293,60 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
       }
       .feature-card {
         margin: 10% 3% 0;
+        h3 {
+          font-weight: 400;
+          color: $heading_color;
+          font-size: 1.2em;
+          margin: 10% 0;
+        }
       }
     }
   }
   .article-section {
+    background-color: #fafafa;
+    padding: 5% 0;
     .container {
       width: 80%;
       margin: 0 auto;
-    h2{
-      color: $heading_color;
-      font-weight: 300;
-      font-size: 2em;
-    }
-    .article-card-wrap{
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
+      h2 {
+        color: $heading_color;
+        font-weight: 300;
+        font-size: 2em;
+        margin-bottom: 5%;
+      }
+      .article-card-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .article-card {
+          width: 22%;
+          background-color: white;
+          border-radius: 5px;
+          img {
+            width: 100%;
+            max-height: 158px;
+            border-radius: 5px 5px 0 0;
+          }
+          .article-content {
+            padding: 2% 8% 8%;
+            .small-text {
+              font-size: 0.6em;
+            }
+            h3 {
+              font-size: 1em;
+              color: $heading_color;
+              font-weight: 200;
+              text-align: left;
+              margin: 4% 0;
+            }
+            p {
+              text-align: left;
+              font-size: 0.8em;
+              margin: 4% 0;
+            }
+          }
+        }
+      }
     }
   }
-}
 }
