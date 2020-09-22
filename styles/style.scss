@@ -32,6 +32,15 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
   color: white;
   font-weight: 700;
   font-size: 0.9em;
+  transition: 0.5s ease;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(
+      0.25turn,
+      rgba(92, 201, 117, 0.8),
+      rgba(64, 186, 196, 0.8)
+    );
+  }
 }
 #close {
   display: none;
@@ -90,6 +99,9 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     padding-top: 100%;
     .request-button-div {
       text-align: center;
+    }
+    .box {
+      padding: 0 3%;
     }
     h1 {
       font-weight: 300;
@@ -170,15 +182,21 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     padding: 6% 0;
     .logo {
       width: 80%;
+      margin: 2% auto;
     }
-    .footer-request-button {
+    .footer-request-button-container {
+      padding: 10% 0;
       width: 100%;
+      .request-button {
+        width: 80%;
+        margin-bottom: 5%;
+      }
     }
     ul {
       padding: 0;
     }
     .list-item {
-      padding: 5% 0;
+      padding: 3% 0;
       color: white;
     }
     .footer-icons {
@@ -188,7 +206,7 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
       padding: 5% 0;
       .icon {
         display: inline;
-        margin: 0 8%;
+        margin: 0 5%;
       }
     }
   }
@@ -235,8 +253,8 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     .hero-image {
       background-image: url(../images/image-mockups.png),
         url(../images/bg-intro-desktop.svg);
-      background-position: 100px -100px, 130px -60px;
-      background-size: 100%, 100%;
+      background-position: 100px -100px, -30px -210px;
+      background-size: 100%, 150%;
       background-repeat: no-repeat, no-repeat;
       z-index: 110;
       overflow: visible;
@@ -263,6 +281,9 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
         p {
           font-size: 15px;
           text-align: left;
+        }
+        .request-button {
+          width: 48%;
         }
       }
     }
@@ -298,6 +319,9 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
           color: $heading_color;
           font-size: 1.2em;
           margin: 10% 0;
+        }
+        p {
+          font-size: 0.9em;
         }
       }
     }
@@ -346,6 +370,53 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
             }
           }
         }
+      }
+    }
+  }
+  footer {
+    background-color: #2d314e;
+    padding: 2% 0;
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .logo {
+        padding: 20% 0;
+      }
+      .footer-icons {
+        padding: 20% 0;
+        .icon {
+          cursor: pointer;
+          &:hover {
+            background-color: #58c78f;
+          }
+        }
+      }
+    }
+    .footer-nav {
+      column-count: 2;
+      height: 100%;
+      .list-item {
+        padding: 14% 0;
+        color: white;
+      }
+    }
+    .footer-request-button-container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-direction: column;
+      .request-button {
+        width: 80%;
+        margin: 8% 0;
       }
     }
   }
