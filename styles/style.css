@@ -243,6 +243,10 @@
     text-align: left;
   }
   .desktop-header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 150;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
