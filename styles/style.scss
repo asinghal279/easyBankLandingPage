@@ -94,17 +94,29 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     display: none;
   }
   .banner {
-    background-image: url("../images/image-mockups.png"),
-      url("../images/bg-intro-mobile.svg");
-    background-position: 0 -128px, 0 0;
-    background-size: contain;
+    // background-image: url("../images/image-mockups.png"),
+    //   url("../images/bg-intro-mobile.svg");
+    // background-position: 0 -128px, 0 0;
+    // background-size: contain;
+    // background-repeat: no-repeat, no-repeat;
+    // padding-top: 100%;
+    .hero-image {
+      background-image: url(../images/image-mockups.png), url(../images/bg-intro-desktop.svg);
+    background-position: 0px -130px, -100px -177px;
+    background-size: 100%, 165%;
     background-repeat: no-repeat, no-repeat;
-    padding-top: 100%;
+    z-index: 110;
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    height: 128%;
+    width: 100%;
+    }
     .request-button-div {
       text-align: center;
     }
     .box {
-      padding: 0 3%;
+      padding: 85% 3% 0;
     }
     h1 {
       font-weight: 300;
