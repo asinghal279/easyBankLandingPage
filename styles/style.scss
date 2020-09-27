@@ -7,7 +7,9 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
   color: $text_color;
   list-style: none;
 }
-
+a {
+  text-decoration: none;
+}
 .align-center {
   text-align: center;
 }
@@ -101,16 +103,17 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
     // background-repeat: no-repeat, no-repeat;
     // padding-top: 100%;
     .hero-image {
-      background-image: url(../images/image-mockups.png), url(../images/bg-intro-desktop.svg);
-    background-position: 0px -130px, -100px -177px;
-    background-size: 100%, 165%;
-    background-repeat: no-repeat, no-repeat;
-    z-index: 110;
-    overflow: visible;
-    position: absolute;
-    right: 0;
-    height: 128%;
-    width: 100%;
+      background-image: url(../images/image-mockups.png),
+        url(../images/bg-intro-desktop.svg);
+      background-position: 0px -130px, -100px -177px;
+      background-size: 100%, 165%;
+      background-repeat: no-repeat, no-repeat;
+      z-index: 110;
+      overflow: visible;
+      position: absolute;
+      right: 0;
+      height: 128%;
+      width: 100%;
     }
     .request-button-div {
       text-align: center;
@@ -417,10 +420,10 @@ $gradient: linear-gradient(0.25turn, #5cc975, #40bac4);
       }
       .footer-icons {
         padding: 20% 0;
-        .icon {
+        a {
           cursor: pointer;
           margin: 0 1%;
-          & path:hover {
+          &:hover path {
             fill: #58c78f;
           }
         }

@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .align-center {
   text-align: center;
 }
@@ -481,11 +485,11 @@
   footer .logo-container .footer-icons {
     padding: 20% 0;
   }
-  footer .logo-container .footer-icons .icon {
+  footer .logo-container .footer-icons a {
     cursor: pointer;
     margin: 0 1%;
   }
-  footer .logo-container .footer-icons .icon path:hover {
+  footer .logo-container .footer-icons a:hover path {
     fill: #58c78f;
   }
   footer .footer-nav {
