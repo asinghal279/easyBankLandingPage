@@ -262,7 +262,9 @@ a {
         box-sizing: border-box;
       }
       .nav-link:hover {
-        color: $heading_color;
+        a {
+          color: $heading_color;
+        }
         border-bottom: 10px solid;
         border-image-slice: 1;
         border-width: 5px;
@@ -436,7 +438,7 @@ a {
         padding: 14% 0;
         color: white;
         cursor: pointer;
-        &:hover {
+        a:hover {
           color: #58c78f;
         }
       }

@@ -291,11 +291,13 @@ a {
             box-sizing: border-box;
   }
   .desktop-header .nav-items .nav-link:hover {
-    color: #303247;
     border-bottom: 10px solid;
     border-image-slice: 1;
     border-width: 5px;
     border-image-source: linear-gradient(0.25turn, #5cc975, #40bac4);
+  }
+  .desktop-header .nav-items .nav-link:hover a {
+    color: #303247;
   }
   .banner {
     position: relative;
@@ -502,7 +504,7 @@ a {
     color: white;
     cursor: pointer;
   }
-  footer .footer-nav .list-item:hover {
+  footer .footer-nav .list-item a:hover {
     color: #58c78f;
   }
   footer .footer-request-button-container {
